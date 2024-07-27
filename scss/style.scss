@@ -587,6 +587,9 @@ nav.nav {
           transition: 0.2s;
         }
       }
+      i{
+        font-size: 1.3em;
+      }
       &::after {
         content: "";
         position: absolute;

@@ -599,6 +599,9 @@ nav.nav .logo span span {
 .nLinks li a svg path {
   transition: 0.2s;
 }
+.nLinks li a i {
+  font-size: 1.3em;
+}
 .nLinks li a::after {
   content: "";
   position: absolute;

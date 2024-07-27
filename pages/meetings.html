@@ -37,7 +37,6 @@
             </svg>
             Dashboard
           </a></li>
-
         <li><a class="nLink" href="./categories.html">
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -68,7 +67,7 @@
             </svg>
             Blogs
           </a></li>
-        <li><a class="nLink active" href="./team-members.html">
+        <li><a class="nLink" href="./team-members.html">
             <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M18.8244 10.7461H17.123C17.2965 11.2209 17.3912 11.7333 17.3912 12.2674V18.6976C17.3912 18.9203 17.3525 19.134 17.2819 19.3328H20.0947C21.1454 19.3328 22.0002 18.478 22.0002 17.4273V13.9219C22.0003 12.1708 20.5756 10.7461 18.8244 10.7461Z"
@@ -142,10 +141,10 @@
             </svg>
             Mail Box
           </a></li>
-          <li><a class="nLink" href="./meetings.html">
-            <i class="fa-solid fa-video"></i>
-              Mettings
-            </a></li>
+        <li><a class="nLink active" href="./meetings.html">
+          <i class="fa-solid fa-video"></i>
+            Mettings
+          </a></li>
         <li><a class="nLink" href="./users.html">
             <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -177,33 +176,92 @@
     <div class="mainCont" id="main">
       <!-- Start Main Content -->
       <div class="pageCont">
-        <div class="conta p30 ">
-          <h3>Add Member : </h3>
+        <div class="conta p30">
+          <h3> Mettings : </h3>
         </div>
         <div class="conta p30">
-          <form class="form w100 pt20">
-            <div class="input">
-              <span>Member Name :</span>
-              <input type="text" placeholder="Member Name">
-            </div>
-            <div class="input w430">
-              <label for="file3">Member Picture : </label>
-              <div class="customInput">
-                <input type="file" accept="image/*" hidden id="file3">
-                <label for="file3">Upload <i class="fa-regular fa-arrow-up-from-bracket"></i></label>
-              </div>
-              <div class="pImages pt20" id="imgcont"></div>
-              <button type="sLubmit" class="saveBtn mra">Save Changes</button>
-            </div>
+          <form class="taIn">
+            <table class="tg">
+              <thead>
+                <tr>
+                  <th>Customer Name  </th>
+                  <th>  Email  </th>
+                  <th>Meeting Subject</th>
+                  <th>Time</th>
+                  <th>Tools</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Yousef Ahmed </td>
+                  <td>test@gmail.com</td>
+                  <td>Website</td>
+                  <td> 2024-07-11 06:30 PM </td>
+                  <td>
+                    <div class="tools">
+                      <a href="##">
+                        <img src="../media/icons/eye.png" alt="" id="show-popUp">
+                      </a>
+                      <a href="##">
+                        <img src="../media/icons/delete.png" alt="">
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </form>
+          <div class="paginationCont">
+            <div class="page">Showing <span>1-20</span> of <span>365</span></div>
+            <div class="paginations">
+              <ul class="spans">
+                <li><a href="##" class="page-link"><img src="../media/icons/arrow-prev.svg" alt=""></a></li>
+                <li><a href="##" class="page-link active">1</a></li>
+                <li><a href="##" class="page-link">2</a></li>
+                <li><a href="##" class="page-link">3</a></li>
+                <li><a href="##" class="page-link">...</a></li>
+                <li><a href="##" class="page-link">13</a></li>
+                <li><a href="##" class="page-link"><img src="../media/icons/arrow-next.svg" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <!-- End Main Content -->
     </div>
+
   </div>
+
+
+<!-- Pop Up -->
+<div class="popUp" id="popUp">
+  <div class="form w430">
+    <div class="lineRow">
+      <span> Name :</span>
+      <span id="dRa">Yousef Ahmed</span>
+    </div>
+    <div class="lineRow">
+      <span>Email :</span>
+      <span id="dRa">test@gmail.com</span>
+    </div>
+    <div class="lineRow">
+      <span>Subject :</span>
+      <span id="dRa">Website</span>
+    </div>
+    <div class="lineRow">
+      <span>Time :</span>
+      <span id="dRa">8 PMs</span>
+    </div>
+    <i class="fa-regular fa-x" id="close"></i>
+  </div>
+</div>
+
 </body>
 <script src="../js/main.js"></script>
 <script src="../js/links.js"></script>
-<script src="../js/oneImage.js"></script>
+<script src="../js/paginations.js"></script>
+<script src="../js/popUp.js"></script>
+<script src="../js/emailPopUp.js"></script>
+
 
 </html>
